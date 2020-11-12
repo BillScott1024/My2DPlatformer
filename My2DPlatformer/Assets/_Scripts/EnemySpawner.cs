@@ -19,4 +19,11 @@ public class EnemySpawner : MonoBehaviour
     {
         
     }
+
+    void Spawn() 
+    {
+        int enemyIndex = Random.Range(0, enemies.Length);
+        Instantiate(enemies[enemyIndex], transform.position, transform.rotation);
+
+    }
 }
